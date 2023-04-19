@@ -1,0 +1,91 @@
+/* start of the css file for the survey form project */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #9277BB;
+    color: #ffffff;
+    font-family: Arial, Verdana, Tahoma;
+}
+
+label {
+    display: block;
+    margin: 0.4rem 0;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #A0BB77;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: 0;
+    padding: 2rem 0;
+}
+
+select {
+    background-color: #513A74;
+    color: #ffffff;
+}
+
+input, textarea {
+    background-color: #9277BB;
+    border: 1px solid #513A74;
+    color: #563D7B;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 5px 0 0 0;
+    min-height: 2em;
+}
+
+input[type="submit"] {
+/* block makes the submit button sit flush against the left edge of its parent */
+    display: block; 
+    width: 80%;
+    min-width: 300px;
+    margin: 2px auto;
+    height: 2em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #4A4A4A;
+    color: #ffffff;
+    background-color: #A0BB77;
+    border-color: #513A74;
+}
+
+.survey {
+    background-color: #7755AA;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.fix-height {
+    width: unset;
+    margin: 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+

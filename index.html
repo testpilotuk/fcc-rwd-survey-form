@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <!-- META tags -->
+        <meta charset="utf-8">
+        <!-- display on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- title displayed in browser tab -->
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Linux User Survey Form</h1>
+        <p id="description">Please complete this short survey, your feedback would be extremely useful.</p>
+        <div class="survey">
+        <!-- FORM starts here -->
+        <form id="survey-form">
+            <fieldset>
+                <!-- Text fields -->
+                <h2>Personal details</h2>
+                <label id="name-label" for="name">Name: <input id="name" type="text" name="name" required placeholder="Full Name" value="" /></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" name="email" required placeholder="Email" value="" /></label>
+                <label id="number-label" for="number">Number of years using Linux: <input id="number" type="number" name="number" min="1" max="30" required placeholder="Number of years" value="" /></label>
+            </fieldset>
+            <!-- Selection box -->
+            <fieldset>
+                <h2>How do you use Linux?</h2>
+                <label for="dropdown"><select id="dropdown">
+                        <option value="">(Select One)</option>
+                        <option value="1">Personal use</option>
+                        <option value="2">Professional use</option>
+                        <option value="3">Both professional and personal</option>
+                    </select>
+                </label>
+            </fieldset>
+            <!-- Radio buttons -->
+            <fieldset>
+            <h2>How do you boot?</h2>
+                <label for="single"><input type="radio" class="fix-height" id="single" name="boot-type" value="single" /> Single boot</label>
+                <label for="dual-linux"><input type="radio" class="fix-height" id="dual" name="boot-type" value="dual-linux" /> Dual with other distro</label>
+                <label for="dual-other"><input type="radio" class="fix-height" id="dual" name="boot-type" value="dual-other" /> Dual with other OS</label>
+                <label for="virt-machine"><input type="radio" class="fix-height" id="virt-machine" name="boot-type" value="virt-machine" /> In a Virtual machine</label>
+                </select>
+            </fieldset>
+            <!-- Check boxes -->
+            <fieldset>
+            <h2>Which distro do you use? (Check all that apply)</h2>
+                <label for="debian"><input id="debian" type="checkbox" class="fix-height" name="debian" value="debian" /> Debian</label>
+                <label for="ubuntu"><input id="ubuntu" type="checkbox" class="fix-height" name="ubuntu" value="ubuntu" /> Ubuntu</label>
+                <label for="fedora"><input id="fedora" type="checkbox" class="fix-height" name="fedora" value="fedora" /> Fedora</label>
+                <label for="RHEL"><input id="RHEL" type="checkbox" class="fix-height" name="RHEL" value="RHEL" /> RHEL</label>
+                <label for="opensuse"><input id="opensuse" type="checkbox" class="fix-height" name="opensuse" value="opensuse" /> OpenSUSE</label>
+                <label for="elementary-os"><input id="elementary-os" type="checkbox" class="fix-height" name="elementary-os" value="elementary-os" /> Elementary-OS</label>
+                <label for="linux-mint"><input id="linux-mint" type="checkbox" class="fix-height" name="linux-mint" value="linux-mint" /> Linux Mint</label>
+                <label for="pop-os"><input id="pop-os" type="checkbox" class="fix-height" name="pop-os" value="pop-os" /> PopOS</label>
+                <label for="arch-linux"><input id="arch-linux" type="checkbox" class="fix-height" name="arch-linux" value="arch-linux" /> Arch Linux</label>
+                <label for="void-linux"><input id="void-linux" type="checkbox" class="fix-height" name="void-linux" value="void-linux" /> Void Linux</label>
+                <label for="manjaro"><input id="manjaro" type="checkbox" class="fix-height" name="manjaro" value="manjaro" /> Manjaro</label>
+                <label for="slackware"><input id="slackware" type="checkbox" class="fix-height" name="slackware" value="slackware" /> Slackware</label>
+                <label for="other"><input id="other" type="checkbox" class="fix-height" name="other" value="other" /> Other</label>
+                </fieldset>
+                <!-- TEXT area -->
+                <fieldset>
+                    <h2>Please tell us why you chose Linux</h2>
+                <label for="more-info"><textarea id="more-info" name="more-info" value="" rows="5" cols="30" placeholder="It's lightening fast..."></textarea></label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <!-- FORM ends -->
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>
